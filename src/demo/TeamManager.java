@@ -11,7 +11,7 @@ public class TeamManager {
 //		Team t1 = new Team();
 //		t1.setHeadCoach(p1);
 //		System.out.println(p1);
-		Integer i1 = Integer.valueOf(127);
+		Integer i1 = 127;
 		Integer i2 = Integer.valueOf(127);
 		//i2 = 1 + 1;
 		if (i1 == i2) {
