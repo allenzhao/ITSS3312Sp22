@@ -10,7 +10,12 @@ public class Team {
 	}
 	
 	public void setHeadCoach(Person headCoach) {
-		this.headCoach = headCoach;
+		headCoach.setName("new name");
+		if (headCoach.getType().equals("coach")) {
+			this.headCoach = headCoach;
+		} else {
+			System.out.println("Wrong type for headCoach");
+		}
 	}
 	// get/set assistantCoach;
 	public Person getAssistantCoach() {
@@ -19,6 +24,10 @@ public class Team {
 	
 	public void setAssistantCoach(Person assistant) {
 		this.assistantCoach = assistant;
+	}
+	
+	public String toString() {
+		return "headCoach: " + this.getHeadCoach().getName();
 	}
 
 }
