@@ -9,7 +9,9 @@ public class NewReviewSystem {
 		Scanner scnr = new Scanner(System.in);
 		Reviews reviews = new Reviews();
 		reviews.inputReviews(scnr);
-		reviews.printReviews(5);
+		
+		System.out.println(reviews);
+		
 	}
 
 }

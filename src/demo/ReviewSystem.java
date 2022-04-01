@@ -5,7 +5,7 @@ public class ReviewSystem {
 
 	public static void main(String[] args) {
 		ArrayList<Review> reviews = new ArrayList<Review>();
-		System.out.println("Type rating + comments. To end: -1");
+		System.out.println("Type rating, then comments. To end: -1");
 		Scanner scnr = new Scanner(System.in);
 		int rating = scnr.nextInt();
 		while (rating != -1) {
