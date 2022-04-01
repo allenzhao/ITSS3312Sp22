@@ -36,5 +36,9 @@ public class Review {
 		this.rating = rating;
 	}
 	
+	public String toString() {
+		return "Rating: "+ this.rating + "\nComment:" + comment;
+	}
+	
 
 }

@@ -17,31 +17,38 @@ public class CircleRunner {
 		for (Circle c : circles) {
 			System.out.println(c);
 		}
-		int i;
-		for (i = 0; i < circles.size(); ++i) {
-			Circle toChanage = new Circle((double) i + 5);
-			circles.set(i, toChanage); // works, changes circles.
-		}
-		System.out.println("After regular for loop & set:");
+		Circle c4 = circles.get(2);
+		circles.remove(c4);
+		System.out.println("Confirm ArrayList after remove:");
+
 		for (Circle c : circles) {
 			System.out.println(c);
 		}
-		System.out.println("Retry set using enhanced for loop:");
-		for (Circle loop : circles) {
-			Circle circleToChange = new Circle(500.0);
-			loop = circleToChange; // not working!
-		}
-		for (Circle c : circles) {
-			System.out.println(c);
-		}
-		for (Circle loop : circles) {
-			double newR = new Random().nextDouble()*10;
-			loop.setRadius(newR); // works, change circles!
-		}
-		System.out.println("Confirm calling member worked:");
-		for (Circle c : circles) {
-			System.out.println(c);
-		}
+//		int i;
+//		for (i = 0; i < circles.size(); ++i) {
+//			Circle toChanage = new Circle((double) i + 5);
+//			circles.set(i, toChanage); // works, changes circles.
+//		}
+//		System.out.println("After regular for loop & set:");
+//		for (Circle c : circles) {
+//			System.out.println(c);
+//		}
+//		System.out.println("Retry set using enhanced for loop:");
+//		for (Circle loop : circles) {
+//			Circle circleToChange = new Circle(500.0);
+//			loop = circleToChange; // not working!
+//		}
+//		for (Circle c : circles) {
+//			System.out.println(c);
+//		}
+//		for (Circle loop : circles) {
+//			double newR = new Random().nextDouble()*10;
+//			loop.setRadius(newR); // works, change circles!
+//		}
+//		System.out.println("Confirm calling member worked:");
+//		for (Circle c : circles) {
+//			System.out.println(c);
+//		}
 
 	}
 }
