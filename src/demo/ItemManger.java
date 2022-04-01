@@ -8,7 +8,7 @@ public class ItemManger {
 		g1.setQuantity(456);
 		System.out.println(g1.getName() + g1.getQuantity());
 		ProduceItem p1 = new ProduceItem();
-		p1.setName("000");II
+		p1.setName("000");
 		p1.setQuantity(100);
 		System.out.println(p1.getName() + p1.getQuantity());
 	}
