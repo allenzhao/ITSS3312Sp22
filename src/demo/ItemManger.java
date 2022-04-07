@@ -4,13 +4,16 @@ public class ItemManger {
 
 	public static void main(String[] args) {
 		GenericItem g1 = new GenericItem();
-		g1.setName("123");
+		g1.setName("Generic");
 		g1.setQuantity(456);
-		System.out.println(g1.getName() + g1.getQuantity());
+		System.out.println(g1.getDescription());
 		ProduceItem p1 = new ProduceItem();
-		p1.setName("000");
+		p1.setName("Produce");
 		p1.setQuantity(100);
-		System.out.println(p1.getName() + p1.getQuantity());
+		p1.setExpiration("Expired already!!!!");
+		System.out.println(p1.getDescription());
+		ProduceItem p2 = new ProduceItem();
+		System.out.println(p2.getDescription());
 	}
 
 }

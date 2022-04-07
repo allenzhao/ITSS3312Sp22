@@ -4,6 +4,11 @@ public class GenericItem {
 	private int itemQuantity;
 	private String itemName;
 	
+	GenericItem() {
+		itemQuantity = 1;
+		itemName = "None";
+	}
+	
 	public void setQuantity(int quantity) {
 		itemQuantity = quantity;
 	}
@@ -18,5 +23,9 @@ public class GenericItem {
 	
 	public String getName() {
 		return this.itemName;
+	}
+	
+	public String getDescription() {
+		return this.itemName + "@" + this.itemQuantity;
 	}
 }
