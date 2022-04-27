@@ -18,6 +18,23 @@ public class WordScrambler {
 	public static void scrambleLetters(String remainLetters, String chosenLetters) {
 		// Todo: Your implementation goes here
 		// Hint: Use the removeFromIndex and insertAtIndex helper methods
+		if (remainLetters.length() == 0) {
+			System.out.println("Base case: " + chosenLetters);
+		} else {
+			for (int i = 0; i < remainLetters.length(); ++i) {
+				String removed = remainLetters.substring(i, i+1);
+				remainLetters = removeFromIndex(remainLetters, i);
+				chosenLetters += removed;
+				
+				scrambleLetters(remainLetters, chosenLetters);
+				//System.out.println("--------");
+				//System.out.println(remainLetters);
+				//System.out.println(chosenLetters);
+				//System.out.println("--------");
+				remainLetters = insertAtIndex(remainLetters, removed, i);
+				chosenLetters = removeFromIndex(chosenLetters, chosenLetters.length() - 1);
+			}
+		}
 
 	}
 

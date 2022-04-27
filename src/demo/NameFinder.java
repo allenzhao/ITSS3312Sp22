@@ -45,7 +45,7 @@ public class NameFinder {
     	} else {
     		int result = stringList.get(mid).compareTo(itemMatch);
     		if (result > 0) {
-    			// Note: mid > itemMatch meaning that we should be looking in the lower half.
+    			// Note: mid > itemMatch meaning that we should be looking in the lower half!
     			return findMatch(stringList, itemMatch, lowVal, mid);
     		} else {
     			return findMatch(stringList, itemMatch, mid + 1, highVal);
